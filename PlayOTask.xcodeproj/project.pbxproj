@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DD00340FE2A0BE64E6E9F56 /* Pods_PlayOTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37CC825CADFB7197BDFC308 /* Pods_PlayOTaskTests.framework */; };
+		286918C8990FD1678C627069 /* Pods_PlayOTask_PlayOTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077990EBFCE756029BB82D3B /* Pods_PlayOTask_PlayOTaskUITests.framework */; };
+		5CD1E0495D6DE98B2110CA75 /* Pods_PlayOTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A5CCEF4FE0233AE466DC97 /* Pods_PlayOTask.framework */; };
 		CB5DE416282FD47D00071A86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5DE415282FD47D00071A86 /* AppDelegate.swift */; };
 		CB5DE418282FD47D00071A86 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5DE417282FD47D00071A86 /* SceneDelegate.swift */; };
-		CB5DE41A282FD47D00071A86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5DE419282FD47D00071A86 /* ViewController.swift */; };
 		CB5DE41D282FD47D00071A86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5DE41B282FD47D00071A86 /* Main.storyboard */; };
 		CB5DE41F282FD48000071A86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB5DE41E282FD48000071A86 /* Assets.xcassets */; };
 		CB5DE422282FD48000071A86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5DE420282FD48000071A86 /* LaunchScreen.storyboard */; };
 		CB5DE42D282FD48000071A86 /* PlayOTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5DE42C282FD48000071A86 /* PlayOTaskTests.swift */; };
 		CB5DE437282FD48000071A86 /* PlayOTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5DE436282FD48000071A86 /* PlayOTaskUITests.swift */; };
 		CB5DE439282FD48000071A86 /* PlayOTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5DE438282FD48000071A86 /* PlayOTaskUITestsLaunchTests.swift */; };
+		CB5DE449282FD59400071A86 /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5DE448282FD59400071A86 /* ListVC.swift */; };
+		CB5DE45C282FD77100071A86 /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5DE45B282FD77100071A86 /* ListModel.swift */; };
+		CB5DE45F282FD7CB00071A86 /* NetworkConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5DE45E282FD7CB00071A86 /* NetworkConnectivity.swift */; };
+		CB5DE463282FD86D00071A86 /* ListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5DE461282FD86D00071A86 /* ListTableCell.swift */; };
+		CB5DE464282FD86D00071A86 /* ListTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB5DE462282FD86D00071A86 /* ListTableCell.xib */; };
+		CB5DE467282FE88000071A86 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5DE466282FE88000071A86 /* DetailsVC.swift */; };
+		CB5DE469282FF25100071A86 /* Loder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5DE468282FF25100071A86 /* Loder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +45,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		077990EBFCE756029BB82D3B /* Pods_PlayOTask_PlayOTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayOTask_PlayOTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60A5CCEF4FE0233AE466DC97 /* Pods_PlayOTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayOTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CA3BA9E80BF6234120D7EBE /* Pods-PlayOTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayOTaskTests.release.xcconfig"; path = "Target Support Files/Pods-PlayOTaskTests/Pods-PlayOTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		8D8C99561938CF80C707798C /* Pods-PlayOTask-PlayOTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayOTask-PlayOTaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-PlayOTask-PlayOTaskUITests/Pods-PlayOTask-PlayOTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AF10D8B647DF4380F472AC6F /* Pods-PlayOTask-PlayOTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayOTask-PlayOTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-PlayOTask-PlayOTaskUITests/Pods-PlayOTask-PlayOTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C37CC825CADFB7197BDFC308 /* Pods_PlayOTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayOTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5DE412282FD47D00071A86 /* PlayOTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayOTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5DE415282FD47D00071A86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB5DE417282FD47D00071A86 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CB5DE419282FD47D00071A86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CB5DE41C282FD47D00071A86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB5DE41E282FD48000071A86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB5DE421282FD48000071A86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +63,16 @@
 		CB5DE432282FD48000071A86 /* PlayOTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlayOTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5DE436282FD48000071A86 /* PlayOTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayOTaskUITests.swift; sourceTree = "<group>"; };
 		CB5DE438282FD48000071A86 /* PlayOTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayOTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CB5DE448282FD59400071A86 /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
+		CB5DE45B282FD77100071A86 /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
+		CB5DE45E282FD7CB00071A86 /* NetworkConnectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConnectivity.swift; sourceTree = "<group>"; };
+		CB5DE461282FD86D00071A86 /* ListTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableCell.swift; sourceTree = "<group>"; };
+		CB5DE462282FD86D00071A86 /* ListTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableCell.xib; sourceTree = "<group>"; };
+		CB5DE466282FE88000071A86 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+		CB5DE468282FF25100071A86 /* Loder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loder.swift; sourceTree = "<group>"; };
+		D0DA6EB040D1A6F51869218E /* Pods-PlayOTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayOTask.release.xcconfig"; path = "Target Support Files/Pods-PlayOTask/Pods-PlayOTask.release.xcconfig"; sourceTree = "<group>"; };
+		EA6E20311389ABAF356A5DE3 /* Pods-PlayOTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayOTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-PlayOTaskTests/Pods-PlayOTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F8687E03A2AF4C3486AA00D7 /* Pods-PlayOTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayOTask.debug.xcconfig"; path = "Target Support Files/Pods-PlayOTask/Pods-PlayOTask.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CD1E0495D6DE98B2110CA75 /* Pods_PlayOTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DD00340FE2A0BE64E6E9F56 /* Pods_PlayOTaskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +96,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				286918C8990FD1678C627069 /* Pods_PlayOTask_PlayOTaskUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D0837BF8B8B23CB35A0BE38 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8687E03A2AF4C3486AA00D7 /* Pods-PlayOTask.debug.xcconfig */,
+				D0DA6EB040D1A6F51869218E /* Pods-PlayOTask.release.xcconfig */,
+				8D8C99561938CF80C707798C /* Pods-PlayOTask-PlayOTaskUITests.debug.xcconfig */,
+				AF10D8B647DF4380F472AC6F /* Pods-PlayOTask-PlayOTaskUITests.release.xcconfig */,
+				EA6E20311389ABAF356A5DE3 /* Pods-PlayOTaskTests.debug.xcconfig */,
+				8CA3BA9E80BF6234120D7EBE /* Pods-PlayOTaskTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CB5DE409282FD47D00071A86 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +123,8 @@
 				CB5DE42B282FD48000071A86 /* PlayOTaskTests */,
 				CB5DE435282FD48000071A86 /* PlayOTaskUITests */,
 				CB5DE413282FD47D00071A86 /* Products */,
+				2D0837BF8B8B23CB35A0BE38 /* Pods */,
+				DDF53AF2F37A809AFFAD04CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +141,13 @@
 		CB5DE414282FD47D00071A86 /* PlayOTask */ = {
 			isa = PBXGroup;
 			children = (
-				CB5DE415282FD47D00071A86 /* AppDelegate.swift */,
-				CB5DE417282FD47D00071A86 /* SceneDelegate.swift */,
-				CB5DE419282FD47D00071A86 /* ViewController.swift */,
-				CB5DE41B282FD47D00071A86 /* Main.storyboard */,
+				CB5DE45D282FD79700071A86 /* Global */,
+				CB5DE45A282FD75700071A86 /* Models */,
+				CB5DE447282FD57900071A86 /* List */,
+				CB5DE460282FD84E00071A86 /* List Cell */,
+				CB5DE465282FE85F00071A86 /* Details */,
+				CB5DE446282FD4A000071A86 /* AppDeleagte */,
+				CB5DE445282FD48A00071A86 /* Srotyboards */,
 				CB5DE41E282FD48000071A86 /* Assets.xcassets */,
 				CB5DE420282FD48000071A86 /* LaunchScreen.storyboard */,
 				CB5DE423282FD48000071A86 /* Info.plist */,
@@ -127,6 +172,75 @@
 			path = PlayOTaskUITests;
 			sourceTree = "<group>";
 		};
+		CB5DE445282FD48A00071A86 /* Srotyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CB5DE41B282FD47D00071A86 /* Main.storyboard */,
+			);
+			path = Srotyboards;
+			sourceTree = "<group>";
+		};
+		CB5DE446282FD4A000071A86 /* AppDeleagte */ = {
+			isa = PBXGroup;
+			children = (
+				CB5DE415282FD47D00071A86 /* AppDelegate.swift */,
+				CB5DE417282FD47D00071A86 /* SceneDelegate.swift */,
+			);
+			path = AppDeleagte;
+			sourceTree = "<group>";
+		};
+		CB5DE447282FD57900071A86 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				CB5DE448282FD59400071A86 /* ListVC.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		CB5DE45A282FD75700071A86 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CB5DE45B282FD77100071A86 /* ListModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CB5DE45D282FD79700071A86 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				CB5DE45E282FD7CB00071A86 /* NetworkConnectivity.swift */,
+				CB5DE468282FF25100071A86 /* Loder.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		CB5DE460282FD84E00071A86 /* List Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CB5DE461282FD86D00071A86 /* ListTableCell.swift */,
+				CB5DE462282FD86D00071A86 /* ListTableCell.xib */,
+			);
+			path = "List Cell";
+			sourceTree = "<group>";
+		};
+		CB5DE465282FE85F00071A86 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				CB5DE466282FE88000071A86 /* DetailsVC.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		DDF53AF2F37A809AFFAD04CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60A5CCEF4FE0233AE466DC97 /* Pods_PlayOTask.framework */,
+				077990EBFCE756029BB82D3B /* Pods_PlayOTask_PlayOTaskUITests.framework */,
+				C37CC825CADFB7197BDFC308 /* Pods_PlayOTaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +248,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB5DE43C282FD48000071A86 /* Build configuration list for PBXNativeTarget "PlayOTask" */;
 			buildPhases = (
+				90AF33CBFF9AEFB4CAABFF21 /* [CP] Check Pods Manifest.lock */,
 				CB5DE40E282FD47D00071A86 /* Sources */,
 				CB5DE40F282FD47D00071A86 /* Frameworks */,
 				CB5DE410282FD47D00071A86 /* Resources */,
+				AABA15F984345575ECDA6E37 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +267,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB5DE43F282FD48000071A86 /* Build configuration list for PBXNativeTarget "PlayOTaskTests" */;
 			buildPhases = (
+				8D52A9E9D91852A4C4F24D8C /* [CP] Check Pods Manifest.lock */,
 				CB5DE424282FD48000071A86 /* Sources */,
 				CB5DE425282FD48000071A86 /* Frameworks */,
 				CB5DE426282FD48000071A86 /* Resources */,
@@ -169,9 +286,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB5DE442282FD48000071A86 /* Build configuration list for PBXNativeTarget "PlayOTaskUITests" */;
 			buildPhases = (
+				8E7A862DFDF2205011A3A3C7 /* [CP] Check Pods Manifest.lock */,
 				CB5DE42E282FD48000071A86 /* Sources */,
 				CB5DE42F282FD48000071A86 /* Frameworks */,
 				CB5DE430282FD48000071A86 /* Resources */,
+				8122B755E12394571629C746 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,6 +352,7 @@
 			files = (
 				CB5DE422282FD48000071A86 /* LaunchScreen.storyboard in Resources */,
 				CB5DE41F282FD48000071A86 /* Assets.xcassets in Resources */,
+				CB5DE464282FD86D00071A86 /* ListTableCell.xib in Resources */,
 				CB5DE41D282FD47D00071A86 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,14 +373,122 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8122B755E12394571629C746 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlayOTask-PlayOTaskUITests/Pods-PlayOTask-PlayOTaskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlayOTask-PlayOTaskUITests/Pods-PlayOTask-PlayOTaskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlayOTask-PlayOTaskUITests/Pods-PlayOTask-PlayOTaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D52A9E9D91852A4C4F24D8C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlayOTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E7A862DFDF2205011A3A3C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlayOTask-PlayOTaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90AF33CBFF9AEFB4CAABFF21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlayOTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AABA15F984345575ECDA6E37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlayOTask/Pods-PlayOTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlayOTask/Pods-PlayOTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlayOTask/Pods-PlayOTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CB5DE40E282FD47D00071A86 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB5DE41A282FD47D00071A86 /* ViewController.swift in Sources */,
+				CB5DE449282FD59400071A86 /* ListVC.swift in Sources */,
+				CB5DE45F282FD7CB00071A86 /* NetworkConnectivity.swift in Sources */,
 				CB5DE416282FD47D00071A86 /* AppDelegate.swift in Sources */,
 				CB5DE418282FD47D00071A86 /* SceneDelegate.swift in Sources */,
+				CB5DE469282FF25100071A86 /* Loder.swift in Sources */,
+				CB5DE467282FE88000071A86 /* DetailsVC.swift in Sources */,
+				CB5DE463282FD86D00071A86 /* ListTableCell.swift in Sources */,
+				CB5DE45C282FD77100071A86 /* ListModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +660,7 @@
 		};
 		CB5DE43D282FD48000071A86 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8687E03A2AF4C3486AA00D7 /* Pods-PlayOTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -459,6 +688,7 @@
 		};
 		CB5DE43E282FD48000071A86 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0DA6EB040D1A6F51869218E /* Pods-PlayOTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -486,6 +716,7 @@
 		};
 		CB5DE440282FD48000071A86 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA6E20311389ABAF356A5DE3 /* Pods-PlayOTaskTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -505,6 +736,7 @@
 		};
 		CB5DE441282FD48000071A86 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CA3BA9E80BF6234120D7EBE /* Pods-PlayOTaskTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -524,6 +756,7 @@
 		};
 		CB5DE443282FD48000071A86 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D8C99561938CF80C707798C /* Pods-PlayOTask-PlayOTaskUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -541,6 +774,7 @@
 		};
 		CB5DE444282FD48000071A86 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF10D8B647DF4380F472AC6F /* Pods-PlayOTask-PlayOTaskUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

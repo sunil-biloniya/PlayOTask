@@ -1,0 +1,6 @@
+framework module Pods_PlayOTask_PlayOTaskUITests {
+  umbrella header "Pods-PlayOTask-PlayOTaskUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VjH-BS-bda">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ListVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ListVC" id="BYZ-38-t0r" customClass="ListVC" customModule="PlayOTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xfq-cH-4n3">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="LIST" id="rf9-of-ucB"/>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JzQ-7n-yH1">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JzQ-7n-yH1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2d7-6z-Bos"/>
+                            <constraint firstItem="JzQ-7n-yH1" firstAttribute="top" secondItem="Xfq-cH-4n3" secondAttribute="bottom" id="B1A-Ka-tjU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JzQ-7n-yH1" secondAttribute="trailing" id="FSN-4s-V99"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JzQ-7n-yH1" secondAttribute="bottom" id="Ugw-5m-KI2"/>
+                            <constraint firstItem="Xfq-cH-4n3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ojg-1K-cDA"/>
+                            <constraint firstItem="Xfq-cH-4n3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tpO-NA-cLA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xfq-cH-4n3" secondAttribute="trailing" id="vpl-cq-cOz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wR8-dK-flP"/>
+                    <connections>
+                        <outlet property="tblList" destination="JzQ-7n-yH1" id="UjE-sg-ffF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="77.678571428571431"/>
+        </scene>
+        <!--DetailsVC-->
+        <scene sceneID="Wgg-iv-LE9">
+            <objects>
+                <viewController storyboardIdentifier="DetailsVC" id="5KQ-9Q-N4E" customClass="DetailsVC" customModule="PlayOTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5BS-yK-1Hh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="own-YN-7of">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="DETAILS" id="Uv7-bL-xeo">
+                                        <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" style="plain" id="uC6-8U-zYK">
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="didTapBack:" destination="5KQ-9Q-N4E" id="AjT-FA-8Bd"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IyX-jq-8Re">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="28e-qv-XaC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="own-YN-7of" firstAttribute="leading" secondItem="5BS-yK-1Hh" secondAttribute="leading" id="2Cm-xY-3Ww"/>
+                            <constraint firstItem="IyX-jq-8Re" firstAttribute="top" secondItem="own-YN-7of" secondAttribute="bottom" id="Flb-NH-pFJ"/>
+                            <constraint firstItem="28e-qv-XaC" firstAttribute="bottom" secondItem="IyX-jq-8Re" secondAttribute="bottom" id="J24-QC-o35"/>
+                            <constraint firstItem="28e-qv-XaC" firstAttribute="trailing" secondItem="own-YN-7of" secondAttribute="trailing" id="RDq-Jw-VOu"/>
+                            <constraint firstItem="IyX-jq-8Re" firstAttribute="leading" secondItem="28e-qv-XaC" secondAttribute="leading" id="WB7-pW-UGV"/>
+                            <constraint firstItem="own-YN-7of" firstAttribute="top" secondItem="28e-qv-XaC" secondAttribute="top" id="dKc-WU-OKn"/>
+                            <constraint firstItem="28e-qv-XaC" firstAttribute="trailing" secondItem="IyX-jq-8Re" secondAttribute="trailing" id="sWl-Re-ob3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="IyX-jq-8Re" id="pke-TO-RVZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hoF-eP-0Gq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1713.0434782608697" y="92.410714285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nsg-7X-uGp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="VjH-BS-bda" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WOD-UI-e5v">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Gnf-O2-2hb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K8I-dw-byf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="77.678571428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
